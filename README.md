@@ -115,6 +115,18 @@ cd /home/chisomlifeeke/Documents/high--level-backend-softwares-Nervintech-projec
 
 ## Run Modes
 
+### Premium Web Landing + Login
+
+```bash
+cd site
+python3 -m http.server 5500
+```
+
+Open:
+
+- `http://127.0.0.1:5500/index.html`
+- `http://127.0.0.1:5500/login.html`
+
 ### GUI Mode
 
 ```bash

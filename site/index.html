@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nervin Defender | Secure Backend Intelligence</title>
+  <meta name="description" content="Nervin Defender is a premium backend defense console for route mapping, risk scoring, and infrastructure hardening." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="landing-page">
+  <div class="bg-layer" aria-hidden="true">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <header class="topbar reveal" data-delay="0">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <span class="brand-name">Nervin Defender</span>
+    </div>
+    <nav class="topnav">
+      <a href="#features">Features</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#signals">Signals</a>
+      <a href="login.html" class="btn btn-ghost">Login</a>
+      <a href="login.html" class="btn btn-solid">Start Free</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content reveal" data-delay="100">
+        <p class="eyebrow">Enterprise Defensive Platform</p>
+        <h1>Make every backend route visible, scored, and defensible.</h1>
+        <p class="hero-sub">
+          Map frontend surfaces to backend endpoints, run hardened checks, and turn noisy security data into clear remediation priorities.
+        </p>
+        <div class="hero-actions">
+          <a href="login.html" class="btn btn-solid">Launch Console</a>
+          <a href="#signals" class="btn btn-ghost">View Live Signals</a>
+        </div>
+        <div class="hero-tags">
+          <span>Python Orchestration</span>
+          <span>C/C++/ASM Risk Engine</span>
+          <span>Optional WASM Runtime</span>
+        </div>
+      </div>
+
+      <aside class="hero-panel reveal" data-delay="200">
+        <div class="panel-head">
+          <p>Threat Posture</p>
+          <span class="pulse-dot"></span>
+        </div>
+        <div class="score-ring">
+          <div class="score-value" data-counter="94">0</div>
+          <p>Defense Confidence</p>
+        </div>
+        <div class="signal-list">
+          <div>
+            <span>Mapped Endpoints</span>
+            <strong data-counter="248">0</strong>
+          </div>
+          <div>
+            <span>Policy Gaps Closed</span>
+            <strong data-counter="37">0</strong>
+          </div>
+          <div>
+            <span>Mean Detect Time</span>
+            <strong><span data-counter="12">0</span>m</strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="trust reveal" data-delay="60">
+      <p>Trusted by teams operating high-risk APIs at scale</p>
+      <div class="logo-row">
+        <span>NEXA CLOUD</span>
+        <span>ARC GRID</span>
+        <span>FORTEX OPS</span>
+        <span>NERVINTECH</span>
+        <span>CIPHERLAKE</span>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="section-head reveal" data-delay="40">
+        <p class="eyebrow">Core Capabilities</p>
+        <h2>Built to defend large backend systems, not just scan them.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card tilt-card reveal" data-delay="80">
+          <h3>Route Intelligence</h3>
+          <p>Auto-discover frontend routes and connect each to real backend attack surfaces.</p>
+          <ul>
+            <li>Frontend route discovery</li>
+            <li>Endpoint method mapping</li>
+            <li>Project profile persistence</li>
+          </ul>
+        </article>
+        <article class="feature-card tilt-card reveal" data-delay="120">
+          <h3>Defensive Detection</h3>
+          <p>Detect high-impact hardening gaps before attackers or pen testers exploit them.</p>
+          <ul>
+            <li>Header and TLS posture checks</li>
+            <li>Dangerous method exposure checks</li>
+            <li>Reflection and rate-limit probes</li>
+          </ul>
+        </article>
+        <article class="feature-card tilt-card reveal" data-delay="160">
+          <h3>Risk Scoring Engine</h3>
+          <p>Blend native performance modules with Python orchestration for pragmatic risk scoring.</p>
+          <ul>
+            <li>C/C++ entropy and anomaly scoring</li>
+            <li>Assembly jitter signal mixing</li>
+            <li>WASM adjustment fallback path</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="workflow">
+      <div class="section-head reveal" data-delay="40">
+        <p class="eyebrow">How It Flows</p>
+        <h2>From mapping to mitigation in three secure moves.</h2>
+      </div>
+      <div class="workflow-grid">
+        <div class="workflow-step reveal" data-delay="70">
+          <span>01</span>
+          <h3>Map</h3>
+          <p>Import frontend routes and map each one to backend methods and endpoints.</p>
+        </div>
+        <div class="workflow-step reveal" data-delay="110">
+          <span>02</span>
+          <h3>Scan</h3>
+          <p>Run defensive checks with configurable timeout and aggressive probes.</p>
+        </div>
+        <div class="workflow-step reveal" data-delay="150">
+          <span>03</span>
+          <h3>Harden</h3>
+          <p>Prioritize by severity and total risk score, then track remediation over time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="signals" class="signals">
+      <div class="signals-left reveal" data-delay="70">
+        <p class="eyebrow">Live Security Signals</p>
+        <h2>Operational clarity with premium telemetry visuals.</h2>
+        <p>Use risk trends to reduce alert fatigue and focus engineering effort where it matters most.</p>
+      </div>
+      <div class="signals-right reveal" data-delay="120">
+        <div class="meter">
+          <div class="meter-label">
+            <span>Security Headers</span>
+            <strong>91%</strong>
+          </div>
+          <div class="meter-track"><div class="meter-fill" style="--fill: 91%"></div></div>
+        </div>
+        <div class="meter">
+          <div class="meter-label">
+            <span>Auth Guard Coverage</span>
+            <strong>84%</strong>
+          </div>
+          <div class="meter-track"><div class="meter-fill" style="--fill: 84%"></div></div>
+        </div>
+        <div class="meter">
+          <div class="meter-label">
+            <span>Method Surface Control</span>
+            <strong>88%</strong>
+          </div>
+          <div class="meter-track"><div class="meter-fill" style="--fill: 88%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta reveal" data-delay="90">
+      <h2>Defend faster. Ship safer.</h2>
+      <p>Bring premium-grade visibility to every backend edge your frontend can reach.</p>
+      <a href="login.html" class="btn btn-solid">Continue to Secure Login</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Nervin Defender. Defensive security for authorized teams.</p>
+  </footer>
+</body>
+</html>

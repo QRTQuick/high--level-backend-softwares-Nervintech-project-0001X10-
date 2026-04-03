@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nervin Defender | Secure Login</title>
+  <meta name="description" content="Secure login for Nervin Defender Console." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="login-page">
+  <div class="bg-layer" aria-hidden="true">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <main class="login-shell">
+    <section class="login-intro reveal" data-delay="40">
+      <a href="index.html" class="brand back-link">
+        <span class="brand-mark"></span>
+        <span class="brand-name">Nervin Defender</span>
+      </a>
+      <p class="eyebrow">Security Command Access</p>
+      <h1>Welcome back to your backend defense cockpit.</h1>
+      <p>
+        Access route intelligence, run defensive scans, and monitor hardening progress from a single console.
+      </p>
+      <div class="intro-metrics">
+        <div>
+          <strong data-counter="99">0</strong>
+          <span>Uptime SLA</span>
+        </div>
+        <div>
+          <strong data-counter="420">0</strong>
+          <span>Protected APIs</span>
+        </div>
+        <div>
+          <strong data-counter="24">0</strong>
+          <span>Monitoring Hours</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="login-card reveal" data-delay="120">
+      <h2>Sign in</h2>
+      <p class="card-sub">Use your workspace credentials to continue.</p>
+
+      <form class="auth-form" id="authForm">
+        <label for="email">Work Email</label>
+        <input id="email" name="email" type="email" placeholder="security@company.com" required />
+
+        <label for="password">Password</label>
+        <div class="password-field">
+          <input id="password" name="password" type="password" placeholder="Enter your password" minlength="8" required />
+          <button class="password-toggle" id="passwordToggle" type="button" aria-label="Toggle password visibility">Show</button>
+        </div>
+
+        <div class="form-row">
+          <label class="remember">
+            <input type="checkbox" id="rememberMe" />
+            <span>Remember this device</span>
+          </label>
+          <a href="#" class="muted-link">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-solid btn-full">Secure Login</button>
+      </form>
+
+      <div class="divider"><span>or continue with</span></div>
+
+      <div class="oauth-grid">
+        <button type="button" class="btn btn-ghost btn-full">SSO</button>
+        <button type="button" class="btn btn-ghost btn-full">GitHub</button>
+      </div>
+
+      <p class="signup-note">No workspace yet? <a href="#">Request access</a></p>
+      <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+    </section>
+  </main>
+</body>
+</html>
