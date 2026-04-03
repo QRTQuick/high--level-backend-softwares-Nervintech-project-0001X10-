@@ -1,0 +1,2 @@
+# Optional dependency for WebAssembly risk adapter.
+wasmtime>=17.0.0

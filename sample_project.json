@@ -1,0 +1,24 @@
+{
+  "project_name": "Production API Shield",
+  "frontend_url": "https://example.com",
+  "backend_url": "https://api.example.com",
+  "endpoints": [
+    {
+      "frontend_path": "/",
+      "backend_path": "/health",
+      "method": "GET"
+    },
+    {
+      "frontend_path": "/dashboard",
+      "backend_path": "/api/v1/admin",
+      "method": "GET"
+    },
+    {
+      "frontend_path": "/orders",
+      "backend_path": "/api/v1/orders",
+      "method": "POST"
+    }
+  ],
+  "timeout_seconds": 5.0,
+  "aggressive_checks": false
+}

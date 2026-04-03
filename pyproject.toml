@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nervin-defender"
+version = "0.1.0"
+description = "Defensive backend security scanner with Tkinter GUI and native scoring modules"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Nervintech" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+wasm = ["wasmtime>=17.0.0"]
+
+[project.scripts]
+defender = "defender_app.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
